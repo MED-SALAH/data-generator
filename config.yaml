@@ -1,0 +1,12 @@
+name: sales
+format: csv
+rows: 100
+columns:
+     - name: region
+       dtype: String
+       choice: ["FR-IDF", "FR-NOR", "FR-NAQ"]
+     - name: departement
+       dtype: String
+       dict: {"FR-IDF": ["Paris", "Seine-et-Marne", "Yvelines", "Essonne", "Hauts-de-Seine", "Seine-Saint-Denis", "Val-de-Marne", "Val-d'Oise"],
+              "FR-NOR": ["Calvados", "Eure", "Manche", "Orne", "Seine-Maritime"],
+              "FR-NAQ": ["Charente", "Charente-Maritime", "Corrèze", "Creuse", "Dordogne", "Gironde", "Landes", "Lot-et-Garonne", "Pyrénées-Atlantiques", "Deux-Sèvres", "Vienne", "Haute-Vienne"]}

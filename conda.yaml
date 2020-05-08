@@ -1,0 +1,9 @@
+name: data-generator
+channels:
+  - defaults
+dependencies:
+  - python=3.7.*
+  - pip:
+    - pandas
+    - hydra-core
+    - pytest
